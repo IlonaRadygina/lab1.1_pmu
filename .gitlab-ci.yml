@@ -1,6 +1,10 @@
 stages:
   - build  
 
+image: 
+  name: alpine
+  entrypoint: entrypoint: [""]
+
 build_job:
   stage: build
   only:
