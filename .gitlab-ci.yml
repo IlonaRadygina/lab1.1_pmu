@@ -7,7 +7,7 @@ build_job:
     - branches
   script:
     - 'cd ConsoleApp2'
-    - '"C:\Tools\Nuget\"nuget.exe restore'
+    - '"C:\Tools\Nuget\nuget.exe restore"'
     - C:\Windows\Microsoft.NET\Framework64\v4.0.30319\msbuild.exe /consoleloggerparameters:ErrorsOnly /maxcpucount /nologo /property:Configuration=Release /verbosity:quiet ".\ConsoleApp2.sln"
   artifacts:
     paths:
