@@ -3,6 +3,8 @@ stages:
 
 build_job:
   stage: build
+  tags:
+    - PMU
   only:
     - branches
   script:
