@@ -7,7 +7,7 @@ build_job:
     - branches
   script:
     - 'cd ConsoleApp2'
-    - '"c:\Tools\Nuget\nuget.exe" restore ".\ConsoleApp2.sln"'
+    - '"C:\Tools\Nuget\nuget.exe restore C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\bin\MSBuild.exe .\ConsoleApp2.sln"'
   artifacts:
     paths:
       - 'ConsoleApp2\ConsoleApp2\bin\Debug\netcoreapp3.1\ConsoleApp2.exe'
